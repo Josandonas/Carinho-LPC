@@ -1,0 +1,147 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+.textoferta{
+  position: absolute; 
+  right: -700px; /* posiciona a 90px para a esquerda */ 
+  top: 30px; /* posiciona a 70px para baixo */ 
+  border-width: 3px;/* tamanho de borda*/
+  border-style: outset;/* estilo de borda*/ 
+  border-color: #000000;/* cor de borda*/
+  background-color: #FF0000;
+  width:190px;
+  height:80px;
+}
+/* rodape da pagina*/
+.navbar-brand{
+	font-family:new century schoolbook;
+	font-style: italic;
+	font-size: 38px;
+	margin-top: 0cm;
+}
+/* configuração das imagens dentro dos cards*/
+.card-img-top1{
+    width:560px;
+    height:460px;
+    display: flex;
+  	align-items: center; 
+}
+.nomeimg1{/* nome do produto*/
+  position: absolute; 
+  right: 100px; /* posiciona a 90px para a esquerda */ 
+  top: 450px; /* posiciona a 70px para baixo */ 
+
+}
+.card-img-top2{
+	  width:565px;
+    height:490px;
+    display: flex;
+  	align-items:center; 
+}
+.nomeimg2{/* nome do produto*/
+  position: absolute; 
+  right: 100px; /* posiciona a 90px para a esquerda */ 
+  top: 450px; /* posiciona a 70px para baixo */ 
+
+}
+.card-img-top3{
+    width:560px;
+    height:600px;
+    display: flex;
+  	align-items: center; 
+}
+
+.nomeimg3{/* nome do produto*/
+  position: absolute; 
+  right: 120px; /* posiciona a 90px para a esquerda */ 
+  top: 530px; /* posiciona a 70px para baixo */ 
+
+}
+.card-img-top4{
+    width:560px;
+    height:580px;
+    display: flex;
+  	align-items: center; 
+}
+.nomeimg4{/* nome do produto*/
+  position: absolute; 
+  right: 150px; /* posiciona a 90px para a esquerda */ 
+  top: 520px; /* posiciona a 70px para baixo */ 
+}
+.card-img-top5{
+	  width:560px;
+    height:580px;
+    display: flex;
+  	align-items: center; 
+}
+.nomeimg5{/* nome do produto*/
+  position: absolute; 
+  right: 120px; /* posiciona a 90px para a esquerda */ 
+  top: 520px; /* posiciona a 70px para baixo */ 
+}
+.card-img-top6{
+  	width:547px;
+    height:500px;
+    display: flex;
+  	align-items: center; 
+}
+.nomeimg6{/* nome do produto*/
+  position: absolute; 
+  right: 60px; /* posiciona a 90px para a esquerda */ 
+  top: 520px; /* posiciona a 70px para baixo */ 
+}
+.card-img-top7{/* nome do produto*/
+    width:547px;
+    height:500px;
+    display: flex;
+  	align-items: center; 
+}
+.nomeimg7{/* nome do produto*/
+  position: absolute; 
+  right: 230px; /* posiciona a 90px para a esquerda */ 
+  top: 520px; /* posiciona a 70px para baixo */ 
+}
+.card-img-top8{
+    width:547px;
+    height:500px;
+    display: flex;
+  	align-items: center; 
+}
+.nomeimg8{/* nome do produto*/
+  position: absolute; 
+  right: 110px; /* posiciona a 90px para a esquerda */ 
+  top: 520px; /* posiciona a 70px para baixo */ 
+}
+.card-img-top9{
+    width:547px;
+    height:500px;
+    display: flex;
+  	align-items: center; 
+}
+.nomeimg9{/* nome do produto*/
+  position: absolute; 
+  right: 32px; /* posiciona a 90px para a esquerda */ 
+  top: 520px; /* posiciona a 70px para baixo */ 
+}
+.card-img-top10{
+    width:547px;
+    height:500px;
+    display: flex;
+  	align-items: center; 
+}
+.nomeimg10{/* nome do produto*/
+  position: absolute; 
+  right: 190px; /* posiciona a 90px para a esquerda */ 
+  top: 520px; /* posiciona a 70px para baixo */ 
+}
+/* fim da configuração das imagens dentro dos cards*/
+
+.row{	/* cor de fundo do row */
+	background: #E0FFFF;  	
+	
+} 

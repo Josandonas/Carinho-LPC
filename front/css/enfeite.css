@@ -1,0 +1,77 @@
+
+body {
+  padding-top: 56px;
+}
+/* rodape da pagina*/
+.navbar-brand{
+	font-family:new century schoolbook;
+	font-style: italic;
+	font-size: 38px;
+	margin-top: 0cm;
+}
+/*texto da tela de login que altera a palavra login*/
+.anunciologin{
+	margin-left: auto;
+	margin-right: auto;
+	width: 7em
+}
+/*texto da tela de cadstro que altera a palavra cadastrar-se*/
+.anunciocadas{
+	margin-left: auto;
+	margin-right: auto;
+	width: 8em
+}
+/*botao de salvar e limoar */
+.botoessalvarlimpar{
+	margin-left: auto;
+	margin-right: auto;
+	width: 12em
+}
+/* foi aqui onde consegui mexer no botao de entrar*/
+.afastarentrar{
+	text-align:center;
+	margin:10px;	
+	position:center;
+	margin-left: 250px;
+	width:200px;
+	height:50px;
+}
+/* foi aqui onde consegui mexer no botao de cadastrar-se*/
+.afastarcadastrarse{
+	text-align:center;
+	margin:10px;
+	position:center;
+	margin-left: 80px;
+	width:200px;
+	height:50px;
+}
+/* foi aqui onde consegui mexer no botao voltar*/
+.btvoltar{
+	text-align:center;
+	margin:15px;	
+	position:center;
+	margin-left: 350px;
+	margin-right: auto;
+	width:200px;
+	height:50px;	
+}
+/* centrlizando o conteudo dos boxes do login ou seja o cpf e a senha na tela*/
+.central{
+	margin-left: 250px;
+}
+/* mexendo no botao de de voltar para o home da tela de login*/
+.home{
+	margin-left: -360px;
+	width:200px;
+	height:50px;
+}
+/* mexendo no botao de cancelar cadastro da tela de cadastro*/
+.cancelcadas{
+	margin-left: -360px;
+	width:200px;
+	height:50px;
+	color: white;
+	background-color: #FF0000;
+	/*CSS 3*/
+
+}
