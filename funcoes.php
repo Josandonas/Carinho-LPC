@@ -84,7 +84,20 @@ function ProdutoNoCarrinho($produto, $quantidade, $link){
 
 }
 
+function CancelarPedido($link, $carrinho){
+	$carrinho = GetCarrinho($link);
 
+	$del = "delete * from Produtos_has_Carrinho where idCarrinho = '".$carrinho."'";
+	$resul = mysqli_query($link, $del);
+}
 
+function RemoverProdutoCarrinho($link, $produto){
+	$carrinho = GetCarrinho($link);
+
+	$del = "delete * from Produtos_has_Carrinho where idProduto='".$produto."' and idCarrinho = '".$carrinho."'";
+
+	$resul = mysqli_query($link, $del);
+
+}
 
 ?>
