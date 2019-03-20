@@ -1,10 +1,9 @@
 body {
   padding-top: 56px;
 }
-.row{	
-	background: #E0FFFF;  	
-	
-} 
+.cordefundo{	
+	background: #E0FFFF;  		
+}  
 .navbar-brand{
 	font-family:new century schoolbook;
 	font-style: italic;
@@ -32,7 +31,7 @@ body {
 }
 .carinho2{
 	position: absolute; 
-	right: 70px; /* posiciona a 90px para a esquerda */ 
+	right: 199px; /* posiciona a 90px para a esquerda */ 
 	top: 500px; /* posiciona a 70px para baixo */ 	
 	width: 200px;
     height: 70px;
@@ -54,9 +53,4 @@ body {
    	border-width: 3px;/* tamanho de borda*/
 	border-style: outset;/* estilo de borda*/ 
 	border-color: #000000;/* cor de borda*/
-}
-.home{
-	margin-left: -350px;
-	width:200px;
-	height:50px;
 }

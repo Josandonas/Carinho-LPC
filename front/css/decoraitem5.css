@@ -10,26 +10,26 @@ body {
 	font-size: 38px;
 	margin-top: 0cm;
 }
-.imgitem1{
-    width: 640px;
-    height: 523px;
+.imgitem5{
+    width: 700px;
+    height: 723px;
     display: flex;
     margin:0px;	
-  	align-items: left; 
+  	align-items: left;
 }
-.nomeitem1{
+.nomeitem5{
 	position: absolute; 
-	right: 141px; /* posiciona a 90px para a esquerda */ 
-	top: 100px; /* posiciona a 70px para baixo */ 
+	right: 75px; /* posiciona a 90px para a esquerda */ 
+	top: 135px; /* posiciona a 70px para baixo */ 
 }
-.preco1{
+.preco5{
 	position: absolute; 
-	right: 70px; /* posiciona a 90px para a esquerda */ 
+	right: 140px; /* posiciona a 90px para a esquerda */ 
 	top: 400px; /* posiciona a 70px para baixo */ 	
 	font-weight: 900;
 	font-family:sans-serif;
 }
-.carinho1{
+.carinho5{
 	position: absolute; 
 	right: 199px; /* posiciona a 90px para a esquerda */ 
 	top: 500px; /* posiciona a 70px para baixo */ 	
@@ -39,18 +39,24 @@ body {
 	border-style: outset;/* estilo de borda*/
 	border-color: #000000;/* cor de borda*/
 }
-.detalhes1{
+.detalhes5{
 	position: absolute; 
-	right: 60px; /* posiciona a 90px para a esquerda */ 
+	right: 10px; /* posiciona a 90px para a esquerda */ 
 	top: 260px; /* posiciona a 70px para baixo */ 		
 }
-.numero1{
+
+.detalhes45{
 	position: absolute; 
-	right: 270px; /* posiciona a 90px para a esquerda */ 
+	right: 75px; /* posiciona a 90px para a esquerda */ 
+	top: 280px; /* posiciona a 70px para baixo */ 		
+}
+.numero5{
+	position: absolute; 
+	right: 300px; /* posiciona a 90px para a esquerda */ 
 	top: 400px; /* posiciona a 70px para baixo */ 		
-	width: 130px;
+	width: 95px;
     height: 40px;
-   	border-width: 3px;/* tamanho de borda*/
+   	border-width: 2px;/* tamanho de borda*/
 	border-style: outset;/* estilo de borda*/ 
 	border-color: #000000;/* cor de borda*/
 }

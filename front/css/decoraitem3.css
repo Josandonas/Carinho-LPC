@@ -1,8 +1,9 @@
 body {
   padding-top: 56px;
 }
-.cordefundo{	
-	background: #E0FFFF;  		
+.cor{	
+	background: #E0FFFF;  	
+	
 } 
 .navbar-brand{
 	font-family:new century schoolbook;
@@ -10,26 +11,26 @@ body {
 	font-size: 38px;
 	margin-top: 0cm;
 }
-.imgitem1{
+.imgitem3{
     width: 640px;
     height: 523px;
     display: flex;
     margin:0px;	
   	align-items: left; 
 }
-.nomeitem1{
+.nomeitem3{
 	position: absolute; 
 	right: 141px; /* posiciona a 90px para a esquerda */ 
 	top: 100px; /* posiciona a 70px para baixo */ 
 }
-.preco1{
+.preco3{
 	position: absolute; 
 	right: 70px; /* posiciona a 90px para a esquerda */ 
 	top: 400px; /* posiciona a 70px para baixo */ 	
 	font-weight: 900;
 	font-family:sans-serif;
 }
-.carinho1{
+.carinho3{
 	position: absolute; 
 	right: 199px; /* posiciona a 90px para a esquerda */ 
 	top: 500px; /* posiciona a 70px para baixo */ 	
@@ -39,12 +40,12 @@ body {
 	border-style: outset;/* estilo de borda*/
 	border-color: #000000;/* cor de borda*/
 }
-.detalhes1{
+.detalhes3{
 	position: absolute; 
-	right: 60px; /* posiciona a 90px para a esquerda */ 
-	top: 260px; /* posiciona a 70px para baixo */ 		
+	right: 10px; /* posiciona a 90px para a esquerda */ 
+	top: 270px; /* posiciona a 70px para baixo */ 		
 }
-.numero1{
+.numero3{
 	position: absolute; 
 	right: 270px; /* posiciona a 90px para a esquerda */ 
 	top: 400px; /* posiciona a 70px para baixo */ 		
