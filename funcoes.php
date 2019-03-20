@@ -12,6 +12,12 @@ function ConectarBD(){
 	return $link;
 }
 
+function VerificarSessao(){
+	if(session_status() != PHP_SESSION_ACTIVE){
+		header('Location: login.html');
+	}
+}
+
 
 function ValidarLogin($cpf, $senha, $link){
 
@@ -72,6 +78,9 @@ function GetValorProduto($produto, $link){
 
 
 function ProdutoNoCarrinho($produto, $quantidade, $link){
+
+	VerificarSessao();
+
 	$carrinho = GetCarrinho($link);
 	$valor = GetValorProduto($produto, $link);
 
@@ -81,6 +90,8 @@ function ProdutoNoCarrinho($produto, $quantidade, $link){
 
     $upd = "update Produtos_has_Carrinho set subtotal = '".$quantidade."'*'".$valor."' where idProduto = '".$produto."';";
     $resul1 = mysqli_query($link, $upd);
+
+    echo "<script>alert(Adicionado ao Carrinho!!)</script>";
 
 }
 
@@ -105,7 +116,7 @@ function ExibirPedidos($link){
 
 	$sel = "select Produtos.imagem as imagem, quantidade, Produtos.valor as valor, subtotal from Cliente inner join Carrinho on Carrinho.cliente = Cliente.idCliente 
 inner join Produtos_has_Carrinho on Produtos_has_Carrinho.idCarrinho = Carrinho.idCarrinho
-inner join Produtos on Produtos_has_Carrinho.idProduto = Produtos.idProduto where idCliente='".$cliente."';"
+inner join Produtos on Produtos_has_Carrinho.idProduto = Produtos.idProduto where idCliente='".$cliente."';";
 
 	$resul = mysqli_query($link, $sel);
 	$dado = mysql_fetch_array($resul);
