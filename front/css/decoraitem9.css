@@ -1,0 +1,62 @@
+body {
+  padding-top: 56px;
+}
+.cordefundo{	
+	background: #E0FFFF;  		
+} 
+.navbar-brand{
+	font-family:new century schoolbook;
+	font-style: italic;
+	font-size: 38px;
+	margin-top: 0cm;
+}
+.imgitem9{
+    width: 700px;
+    height: 623px;
+    display: flex;
+    margin:0px;	
+  	align-items: left;
+}
+.nomeitem9{
+	position: absolute; 
+	right: 90px; /* posiciona a 90px para a esquerda */ 
+	top: 135px; /* posiciona a 70px para baixo */ 
+}
+.preco9{
+	position: absolute; 
+	right: 180px; /* posiciona a 90px para a esquerda */ 
+	top: 400px; /* posiciona a 70px para baixo */ 	
+	font-weight: 900;
+	font-family:sans-serif;
+}
+.carinho9{
+	position: absolute; 
+	right: 250px; /* posiciona a 90px para a esquerda */ 
+	top: 500px; /* posiciona a 70px para baixo */ 	
+	width: 200px;
+    height: 70px;
+	border-width: 9px;/* tamanho de borda*/
+	border-style: outset;/* estilo de borda*/
+	border-color: #000000;/* cor de borda*/
+}
+.detalhes9{
+	position: absolute; 
+	right:10px; /* posiciona a 90px para a esquerda */ 
+	top: 260px; /* posiciona a 70px para baixo */ 		
+}
+
+.detalhes49{
+	position: absolute; 
+	right: 133px; /* posiciona a 90px para a esquerda */ 
+	top: 280px; /* posiciona a 70px para baixo */ 		
+}
+.numero9{
+	position: absolute; 
+	right: 350px; /* posiciona a 90px para a esquerda */ 
+	top: 400px; /* posiciona a 70px para baixo */ 		
+	width: 95px;
+    height: 40px;
+   	border-width: 2px;/* tamanho de borda*/
+	border-style: outset;/* estilo de borda*/ 
+	border-color: #000000;/* cor de borda*/
+}
