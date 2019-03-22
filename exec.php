@@ -1,9 +1,9 @@
 <?php
 require('funcoes.php');
-$objeto = $_POST['produto'];
+$objeto = $_POST['id_produto'];
 
 $link = ConectarBD();
 
-ProdutoNoCarrinho($objeto, 2, $link);
+ProdutoNoCarrinho($objeto, 1, $link);
 
 ?>

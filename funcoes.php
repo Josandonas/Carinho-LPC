@@ -13,8 +13,11 @@ function ConectarBD(){
 }
 
 function VerificarSessao(){
-	if(session_status() != PHP_SESSION_ACTIVE){
-		header('Location: login.html');
+	if (session_status() != PHP_SESSION_ACTIVE) {
+		header("Location: front/login.html");
+  		session_start();
+
+  		return true;
 	}
 }
 
@@ -24,10 +27,12 @@ function ValidarLogin($cpf, $senha, $link){
 	$sel = "select * from Cliente where cpf = '".$cpf."' and senha = '".$senha."';";
 	$user = mysqli_query($link, $sel);
 
-	$dado = mysql_fetch_array($user);
+	if($user == true){
+		session_start();
+		$_SESSION['cpf'] = $cpf;
+		header("Location: front/index.php");
+	}
 
-	session_start();
-	$_SESSION['cpf'] = $dado['cpf'];
 }
 
 
@@ -36,10 +41,10 @@ function CadastrarUsuario($nome, $cpf, $email, $senha, $link){
 	$ins = "insert into Cliente values(default, '".$nome."','".$cpf."','".$email."','".md5($senha)."');";
 	$sql = mysqli_query($link, $ins);
 
-	$dado = mysql_fetch_array($sql);
-
-	session_start();
-	$_SESSION['cpf'] = $dado['cpf'];
+	if($sql == true){
+		session_start();
+		$_SESSION['cpf'] = $cpf;
+	}
 
 }
 
@@ -79,7 +84,9 @@ function GetValorProduto($produto, $link){
 
 function ProdutoNoCarrinho($produto, $quantidade, $link){
 
-	VerificarSessao();
+	$veri = VerificarSessao();
+
+	if($veri == true){
 
 	$carrinho = GetCarrinho($link);
 	$valor = GetValorProduto($produto, $link);
@@ -92,6 +99,7 @@ function ProdutoNoCarrinho($produto, $quantidade, $link){
     $resul1 = mysqli_query($link, $upd);
 
     echo "<script>alert(Adicionado ao Carrinho!!)</script>";
+	}
 
 }
 
