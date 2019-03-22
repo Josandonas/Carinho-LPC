@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 // Função que realiza a conexão com o banco de dados
@@ -56,8 +57,8 @@ function GetCliente($link){
 	$sel = "select idCliente from Cliente where cpf = '".$_SESSION['cpf']."'";
 	$resul = mysqli_query($link, $sel);
 
-	$dado = mysql_fetch_array($resul);
-	$id = $dado['idCliente'];
+	$dado = mysqli_fetch_row($resul);
+	$id = $dado[0];
 
 	return $id;
 }
@@ -66,11 +67,15 @@ function GetCliente($link){
 function GetCarrinho($link){
 	$cliente = GetCliente($link);
 
+	$car = "insert into Carrinho values('".$cliente."', '".$cliente."');";
+
+	$ok = mysqli_query($link, $car);
+
 	$sel = "select idCarrinho from Carrinho where cliente = '".$cliente."'";
 	$resul = mysqli_query($link,$sel);
 
-	$dado = mysql_fetch_array($resul);
-	$id = $dado['idCarrinho'];
+	$dado = mysqli_fetch_row($resul);
+	$id = $dado[0];
 
 	return $id;
 }
@@ -80,8 +85,8 @@ function GetValorProduto($produto, $link){
 	$sel = "select * from Produtos where idProduto = '".$produto."'";
 	$resul = mysqli_query($link, $sel);
 
-	$dado = mysql_fetch_array($resul);
-	$valor = $dado['valor'];
+	$dado = mysqli_fetch_row($resul);
+	$valor = $dado[2];
 
 	return $valor;
 }
@@ -94,6 +99,7 @@ function ProdutoNoCarrinho($produto, $quantidade, $link){
 	if($veri == true){
 
 	$carrinho = GetCarrinho($link);
+
 	$valor = GetValorProduto($produto, $link);
 
 	$ins = "insert into Produtos_has_Carrinho values(default, '".$carrinho."', '".$produto."','".$quantidade."', 0, now());";
@@ -104,6 +110,9 @@ function ProdutoNoCarrinho($produto, $quantidade, $link){
     $resul1 = mysqli_query($link, $upd);
 
     echo "<script>alert(Adicionado ao Carrinho!!)</script>";
+
+    header("Location: front/index.php");
+
 	}
 
 }
