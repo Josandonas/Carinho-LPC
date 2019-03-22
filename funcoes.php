@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 // Função que realiza a conexão com o banco de dados
 function ConectarBD(){
@@ -15,7 +16,7 @@ function ConectarBD(){
 
 //Função que verifica se a sessão está ativa ou não
 function VerificarSessao(){
-	if(!isset ($_SESSION)){
+	if(!isset ($_SESSION['cpf'])){
 		header("Location: front/login.html");
 	}else{
 		return true;
