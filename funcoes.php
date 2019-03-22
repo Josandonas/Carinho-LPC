@@ -111,6 +111,11 @@ function RemoverProdutoCarrinho($link, $produto){
 
 }
 
+function Deslogar(){
+	session_destroy();
+	header("Location: front/index.php");
+}
+
 function ExibirPedidos($link){
 	$cliente = GetCliente($link);
 
