@@ -1,7 +1,7 @@
 <?php
 require('../funcoes.php');
 $link = ConectarBD();
-
+//session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,9 +74,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-<!--            </form> -->
+                </form>
 
-<!--            <form method="post" onsubmit="ProdutoNoCarrinho()">--> 
+            <form method="post" action="../exec.php"> 
                 <input type="hidden" name="id_produto" value="5">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -93,9 +93,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-<!--            </form> -->
+           </form> 
 
-<!--            <form method="post" onsubmit="ProdutoNoCarrinho()"> -->
+        <form method="post" action="../exec.php">
                 <input type="hidden" name="id_produto" value="2">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -112,9 +112,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-<!--            </form> -->
+        </form>
 
-<!--            <form method="post" onsubmit="ProdutoNoCarrinho()"> -->
+        <form method="post" action="../exec.php">
                 <input type="hidden" name="id_produto" value="3">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -131,10 +131,10 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-<!--            </form> -->
+        </form>
 
 
-<!--            <form method="post" onsubmit="ProdutoNoCarrinho()">-->
+            <form method="post" action="../exec.php">
                 <input type="hidden" name="id_produto" value="1">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -151,10 +151,10 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-<!--            </form> -->
+            </form>
 
 
-<!--            <form method="post" onsubmit="ProdutoNoCarrinho()">-->
+        <form method="post" action="../exec.php">
                 <input type="hidden" name="id_produto" value="10">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -175,11 +175,11 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-<!--            </form>  -->
+        </form>
 
 
 
-<!--            <form method="post" onsubmit="ProdutoNoCarrinho()"> -->
+        <form method="post" action="../exec.php">
                 <input type="hidden" name="id_produto" value="9">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -198,9 +198,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-<!--            </form> -->
+        </form> 
 
-<!--            <form method="post" onsubmit="ProdutoNoCarrinho()"> -->
+        <form method="post" action="../exec.php">
                 <input type="hidden" name="id_produto" value="7">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -219,9 +219,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-<!--            </form> -->
+        </form>
 
-<!--            <form method="post" onsubmit="ProdutoNoCarrinho()"> -->
+        <form method="post" action="../exec.php">
                 <input type="hidden" name="id_produto" value="6">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -240,10 +240,10 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-<!--            </form> -->
+        </form>
 
 
-<!--            <form method="post" onsubmit="ProdutoNoCarrinho()"> -->
+        <form method="post" action="../exec.php">
                 <input type="hidden" name="id_produto" value="8">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -263,6 +263,15 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
+            </form>
+
+            <form method="POST" action="../exibir_carrinho.php">
+
+                <input type="hidden" name="produtos" value="1">
+                <div class="card-footer">
+                        <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Verificar o Carrinho</button></small>
+                </div>
+
             </form>
 
 

@@ -36,14 +36,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Sair</a>
+            <a class="nav-link" href="front/login.html">Sair</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <br>
-</nav>
 <section class="jumbotron text-center">
   <div class="container">
     <h1 class="jumbotron-heading">HISTÓRICO DE PEDIDOS</h1>
@@ -52,54 +51,48 @@
 
 <div class="container mb-4">
   <?php
-  $sql = "select Produtos.imagem as imagem, quantidade, Produtos.valor as valor, subtotal from Cliente inner join Carrinho on Carrinho.cliente = Cliente.idCliente 
-  inner join Produtos_has_Carrinho on Produtos_has_Carrinho.idCarrinho = Carrinho.idCarrinho
-  inner join Produtos on Produtos_has_Carrinho.idProduto = Produtos.idProduto where idCliente='".$cliente."';";
-  $result = $conn->query($sql);
+  $link = ConectarBD();
+  $cliente = GetCliente($link);
+
+ $selV = "select sum(subtotal) from Produtos_has_Carrinho
+inner join Carrinho on Produtos_has_Carrinho.idCarrinho = Carrinho.idCarrinho
+inner join Cliente on Carrinho.cliente = Cliente.idCliente
+ where idCliente='".$cliente."';";
+
+ $ret = mysqli_query($link, $selV);
+ $total = mysqli_fetch_row($ret);
+
+  $sql = "select Produtos.nomeProduto as Produto, quantidade, Produtos.valor as valor, subtotal from Cliente inner join Carrinho on Carrinho.cliente = Cliente.idCliente 
+inner join Produtos_has_Carrinho on Produtos_has_Carrinho.idCarrinho = Carrinho.idCarrinho
+inner join Produtos on Produtos_has_Carrinho.idProduto = Produtos.idProduto where idCliente='".$cliente."';";
+  $result = mysqli_query($link,$sql);
   while($row = $result->fetch_assoc()) {
+    echo "<center>";
     echo "<div class=\"row\">";
     echo "<div class=\"col-12\">";
     echo "<div class=\"table-responsive\">";
     echo "<table class=\"table table-striped\">";
-    echo "<thead>";
     echo "<tr>";
-    echo "<th scope=\"col\"></th>";
-    echo "<th scope=\"col\">Produto</th>";
-    echo "<th scope=\"col\" class=\"text-center\">Quantidade</th>";
-    echo "<th scope=\"col\" class=\"text-right\">Preço</th>";
-    echo "<th> </th>";
-    echo "</tr>";
-    echo "</thead>";
-    echo "<tbody>";
-    echo "<tr>";
-    echo "<td><src="data:image/jpeg;base64,' . base64_encode($row['imagem']) .'"/></td>";
-    echo "<td> </td>";
-    echo "<td><input class=\"form-control\" type=\"text\" value=".$row['quantidade']." /></td>";
-    echo "<td class=\"text-right\">R$.['valor'].</td>";
-    echo "<td class=\"text-right\"></td>";
-    echo "</tr>";
-    echo "<td></td>";
-    echo "<td></td>";
-    echo "<td></td>";
-    echo "<td></td>";
-    echo "<td>Sub-Total</td>";
-    echo "<td class=\"text-right\">R$.['subtotal'].</td>";
+    echo "<th>Produto</th>";
+    echo "<th>Quantidade</th>";
+    echo "<th>Preço</th>";
+    echo "<th>Subtotal</th>";
     echo "</tr>";
     echo "<tr>";
-    echo "<td></td>";
-    echo "<td></td>";
-    echo "<td></td>";
-    echo "<td></td>";
-    echo "<td><strong>Total</strong></td>";
-    echo "<td class=\"text-right\"><strong></strong></td>";
+    echo "<td>'".$row['Produto']."'</td>";
+    echo "<td>'".$row['quantidade']."'</td>";
+    echo "<td>R$'".$row['valor']."'</td>";
+    echo "<td>R$'".$row['subtotal']."'</td>";
     echo "</tr>";
-    echo "</tbody>";
     echo "</table>";
     echo "</div>";
     echo "</div>";
     echo "</div>";
+    echo "</center>";
+      }
+
+    echo "<td><strong>Total: R$'".round($total[0],3)."'</strong></td>";
     ?>
-  }
 </div>
 
 <!-- Bootstrap core JavaScript -->

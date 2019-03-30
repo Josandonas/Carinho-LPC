@@ -150,7 +150,7 @@ inner join Produtos_has_Carrinho on Produtos_has_Carrinho.idCarrinho = Carrinho.
 inner join Produtos on Produtos_has_Carrinho.idProduto = Produtos.idProduto where idCliente='".$cliente."';";
 
 	$resul = mysqli_query($link, $sel);
-	$dado = mysql_fetch_array($resul);
+	$dado = mysqli_fetch_row($resul);
 
 	return $dado;
 }
