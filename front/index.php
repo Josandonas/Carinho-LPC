@@ -39,19 +39,22 @@ $link = ConectarBD();
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
+
+                        <a class="nav-link" href="..\exibir_carrinho.php">Carrinho</a></i>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="cadastro.html">Cadastrar-se</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="index.html">Sair</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <br>
-    <!-- Page Content -->
-            <form method="post" action="../exec.php">
+    <br>
+    <br>
+    <!--  Page Content -->
+    <form method="post" action="../exec.php"> 
+        
     <div class="container col-lg-8">
         <div class="row col-lg-14">
 
@@ -74,9 +77,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-                </form>
+        
+            <!-- <form method="post" action="../exec.php">  -->
 
-            <form method="post" action="../exec.php"> 
                 <input type="hidden" name="id_produto" value="5">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -93,9 +96,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-           </form> 
+        
 
-        <form method="post" action="../exec.php">
+      <!--  <form method="post" action="../exec.php"> -->
                 <input type="hidden" name="id_produto" value="2">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -112,9 +115,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-        </form>
+        
 
-        <form method="post" action="../exec.php">
+        <!--  <form method="post" action="../exec.php"> -->
                 <input type="hidden" name="id_produto" value="3">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -131,10 +134,10 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-        </form>
+        
 
 
-            <form method="post" action="../exec.php">
+            <!--  <form method="post" action="../exec.php"> -->
                 <input type="hidden" name="id_produto" value="1">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -151,10 +154,10 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-            </form>
+        
 
 
-        <form method="post" action="../exec.php">
+        <!--  <form method="post" action="../exec.php"> -->
                 <input type="hidden" name="id_produto" value="10">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -175,11 +178,11 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-        </form>
+        
 
 
 
-        <form method="post" action="../exec.php">
+        <!--  <form method="post" action="../exec.php"> -->
                 <input type="hidden" name="id_produto" value="9">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -198,9 +201,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-        </form> 
+        
 
-        <form method="post" action="../exec.php">
+        <!--  <form method="post" action="../exec.php"> -->
                 <input type="hidden" name="id_produto" value="7">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -219,9 +222,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-        </form>
+        
 
-        <form method="post" action="../exec.php">
+        <!--  <form method="post" action="../exec.php"> -->
                 <input type="hidden" name="id_produto" value="6">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -240,10 +243,10 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-        </form>
+        
 
 
-        <form method="post" action="../exec.php">
+        <!--  <form method="post" action="../exec.php"> -->
                 <input type="hidden" name="id_produto" value="8">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
@@ -263,23 +266,9 @@ $link = ConectarBD();
                         </div>
                     </div>
                 </div>
-            </form>
-
-            <form method="POST" action="../exibir_carrinho.php">
-
-                <input type="hidden" name="produtos" value="1">
-                <div class="card-footer">
-                        <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Verificar o Carrinho</button></small>
-                </div>
-
-            </form>
-
-
-            <!-- /.row -->
-
-
-            <!-- /.col-lg-9 -->
-
+            
+</form> 
+<!-- -->
         </div>
         <!-- /.row -->
 

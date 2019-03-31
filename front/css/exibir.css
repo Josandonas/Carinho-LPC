@@ -1,0 +1,21 @@
+body {
+  padding-top: 56px;
+}
+.textoferta{
+  position: absolute; 
+  right: -700px; /* posiciona a 90px para a esquerda */ 
+  top: 30px; /* posiciona a 70px para baixo */ 
+  border-width: 3px;/* tamanho de borda*/
+  border-style: outset;/* estilo de borda*/ 
+  border-color: #000000;/* cor de borda*/
+  background-color: #FF0000;
+  width:190px;
+  height:80px;
+}
+/* rodape da pagina*/
+.navbar-brand{
+	font-family:new century schoolbook;
+	font-style: italic;
+	font-size: 38px;
+	margin-top: 0cm;
+}

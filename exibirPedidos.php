@@ -16,7 +16,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/shop-homepage.css" rel="stylesheet">
+  <link href="css/exibir.css" rel="stylesheet">
   <link href="pedidos.css" rel="stylesheet">
 
 </head>
@@ -30,14 +30,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only"></span>
-            </a>
+            
+            <a class="nav-link" onclick="goBack()">Continuar Comprando</a>
+            
           </li>
           <li class="nav-item">
             <a class="nav-link" href="front/login.html">Sair</a>
           </li>
+
         </ul>
       </div>
     </div>
@@ -98,6 +100,11 @@ inner join Produtos on Produtos_has_Carrinho.idProduto = Produtos.idProduto wher
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
 
 </body>
 
