@@ -53,14 +53,12 @@ $link = ConectarBD();
     <br>
     <br>
     <!--  Page Content -->
-    <form method="post" action="../exec.php"> 
         
     <div class="container col-lg-8">
         <div class="row col-lg-14">
 
             <!-- /.col-lg-3 -->
 
-                <input type="hidden" name="id_produto" value="4">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem1.html"><img class="card-img-top1" src="./imagens/picture1.jpg"></a>
@@ -73,14 +71,13 @@ $link = ConectarBD();
                             <p class="card-text">HQ HD Conversor Digital HQTV19 HDMI USB</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php"> 
+                            <input type="hidden" name="id_produto" value="4">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
                 </div>
         
-            <!-- <form method="post" action="../exec.php">  -->
-
-                <input type="hidden" name="id_produto" value="5">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem2.html"><img class="card-img-top2" src="./imagens/picture2.jpg"></a>
@@ -92,14 +89,15 @@ $link = ConectarBD();
                             <p class="card-text">Smart TV LED 32" Philips 32PHG5102/78 com Conversor Digital Wi-Fi integrado 2 USB 3 HDMI</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php">
+                            <input type="hidden" name="id_produto" value="5">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
                 </div>
         
 
-      <!--  <form method="post" action="../exec.php"> -->
-                <input type="hidden" name="id_produto" value="2">
+
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem3.html"><img class="card-img-top3" src="./imagens/picture3.jpg"></a>
@@ -111,14 +109,15 @@ $link = ConectarBD();
                             <p class="card-text">HD Panasonic TC-32F400B 2 HDMI USB Conversor Digital</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php">
+                            <input type="hidden" name="id_produto" value="2">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
                 </div>
         
 
-        <!--  <form method="post" action="../exec.php"> -->
-                <input type="hidden" name="id_produto" value="3">
+
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem4.html"><img class="card-img-top4" src="./imagens/picture4.jpg"></a>
@@ -130,6 +129,8 @@ $link = ConectarBD();
                             <p class="card-text">Philco PTV24N92D HD com Conversor Digital 1 HDMI 1 USB Sleep timer - 60Hz</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php">
+                            <input type="hidden" name="id_produto" value="3">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
@@ -137,8 +138,7 @@ $link = ConectarBD();
         
 
 
-            <!--  <form method="post" action="../exec.php"> -->
-                <input type="hidden" name="id_produto" value="1">
+            
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem5.html"><img class="card-img-top5" src="./imagens/picture5.jpg"></a>
@@ -150,6 +150,8 @@ $link = ConectarBD();
                             <p class="card-text">Philco PTV32G50SN HD com Conversor Digital 2 HDMI 1 USB Wi-Fi Áudio Dolby Preta</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php">
+                            <input type="hidden" name="id_produto" value="1">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
@@ -157,8 +159,6 @@ $link = ConectarBD();
         
 
 
-        <!--  <form method="post" action="../exec.php"> -->
-                <input type="hidden" name="id_produto" value="10">
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem6.html"><img class="card-img-top6" src="./imagens/picture6.jpg"></a>
@@ -174,6 +174,8 @@ $link = ConectarBD();
                             <p class="card-text">64GB Dual Chip Android 8.0 Tela 6" Octa-Core 1.8GHz 4G Câmera 16MP F1.7 + 5MP F1.9 (Dual Cam) - Preto</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php">
+                            <input type="hidden" name="id_produto" value="10">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
@@ -182,8 +184,7 @@ $link = ConectarBD();
 
 
 
-        <!--  <form method="post" action="../exec.php"> -->
-                <input type="hidden" name="id_produto" value="9">
+
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem7.html"><img class="card-img-top7" src="./imagens/picture7.jpg"></a>
@@ -197,14 +198,15 @@ $link = ConectarBD();
                             <p class="card-text">64GB Cinza Espacial Tela 4.7" IOS 4G Câmera 12MP - Apple</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php">
+                            <input type="hidden" name="id_produto" value="9">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
                 </div>
         
 
-        <!--  <form method="post" action="../exec.php"> -->
-                <input type="hidden" name="id_produto" value="7">
+             
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem8.html"><img class="card-img-top8" src="./imagens/picture8.jpg"></a>
@@ -218,14 +220,15 @@ $link = ConectarBD();
                             <p class="card-text"> Dual Chip Android 8.1.0 Oreo Tela 5.5" Octa-Core 1.5 Ghz 64GB 4G Câmera 16MP com TV - Preto</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php">
+                            <input type="hidden" name="id_produto" value="7">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
                 </div>
         
 
-        <!--  <form method="post" action="../exec.php"> -->
-                <input type="hidden" name="id_produto" value="6">
+            
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem9.html"><img class="card-img-top9" src="./imagens/picture9.jpg"></a>
@@ -239,6 +242,8 @@ $link = ConectarBD();
                             <p class="card-text">32GB Dual Chip Android Pie - 9.0 Tela 5.7" 1.8 GHz Octa-Core 4G Câmera 13MP - Indigo</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php">
+                            <input type="hidden" name="id_produto" value="6">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
@@ -246,8 +251,7 @@ $link = ConectarBD();
         
 
 
-        <!--  <form method="post" action="../exec.php"> -->
-                <input type="hidden" name="id_produto" value="8">
+            
                 <div class="col-lg-6 col-md-5 mb-4">
                     <div class="card h-100">
                         <a href="pagitem10.html"><img class="card-img-top10" src="./imagens/picture10.jpg"></a>
@@ -262,12 +266,12 @@ $link = ConectarBD();
                             <p class="card-text"> 256GB IOS12 4G + Wi-fi Câmera 12MP - Apple</p>
                         </div>
                         <div class="card-footer">
+                            <form method="post" action="../exec.php">
+                            <input type="hidden" name="id_produto" value="8">
                             <small><button type="submit" class="btn btn-primary btn-lg btn-block" class="text-muted">Adicionar ao Carrinho</button></small>
                         </div>
                     </div>
                 </div>
-            
-</form> 
 <!-- -->
         </div>
         <!-- /.row -->
