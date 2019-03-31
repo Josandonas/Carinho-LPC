@@ -25,33 +25,38 @@ body {
 }
 .preco3{
 	position: absolute; 
-	right: 70px; /* posiciona a 90px para a esquerda */ 
+	right: 200px; /* posiciona a 90px para a esquerda */ 
 	top: 400px; /* posiciona a 70px para baixo */ 	
 	font-weight: 900;
 	font-family:sans-serif;
-}
-.carinho3{
-	position: absolute; 
-	right: 199px; /* posiciona a 90px para a esquerda */ 
-	top: 500px; /* posiciona a 70px para baixo */ 	
-	width: 200px;
-    height: 70px;
-	border-width: 9px;/* tamanho de borda*/
-	border-style: outset;/* estilo de borda*/
-	border-color: #000000;/* cor de borda*/
 }
 .detalhes3{
 	position: absolute; 
 	right: 10px; /* posiciona a 90px para a esquerda */ 
 	top: 270px; /* posiciona a 70px para baixo */ 		
 }
+
+
+/*
+.carinho3{
+	position: absolute; 
+	right: 199px; 					posiciona a 90px para a esquerda 
+	top: 500px; 					posiciona a 70px para baixo 
+	width: 200px;
+    height: 70px;
+	border-width: 9px;				tamanho de borda
+	border-style: outset;			estilo de borda
+	border-color: #000000;			cor de borda
+}*/
+
+/*
 .numero3{
 	position: absolute; 
-	right: 270px; /* posiciona a 90px para a esquerda */ 
-	top: 400px; /* posiciona a 70px para baixo */ 		
+	right: 270px; 					posiciona a 90px para a esquerda 
+	top: 400px; 					posiciona a 70px para baixo 		
 	width: 130px;
     height: 40px;
-   	border-width: 3px;/* tamanho de borda*/
-	border-style: outset;/* estilo de borda*/ 
-	border-color: #000000;/* cor de borda*/
-}
+   	border-width: 3px;				tamanho de borda
+	border-style: outset;			estilo de borda
+	border-color: #000000;			cor de borda
+}*/

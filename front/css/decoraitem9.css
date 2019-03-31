@@ -29,16 +29,7 @@ body {
 	font-weight: 900;
 	font-family:sans-serif;
 }
-.carinho9{
-	position: absolute; 
-	right: 250px; /* posiciona a 90px para a esquerda */ 
-	top: 500px; /* posiciona a 70px para baixo */ 	
-	width: 200px;
-    height: 70px;
-	border-width: 9px;/* tamanho de borda*/
-	border-style: outset;/* estilo de borda*/
-	border-color: #000000;/* cor de borda*/
-}
+
 .detalhes9{
 	position: absolute; 
 	right:10px; /* posiciona a 90px para a esquerda */ 
@@ -50,13 +41,24 @@ body {
 	right: 133px; /* posiciona a 90px para a esquerda */ 
 	top: 280px; /* posiciona a 70px para baixo */ 		
 }
+/*
 .numero9{
 	position: absolute; 
-	right: 350px; /* posiciona a 90px para a esquerda */ 
-	top: 400px; /* posiciona a 70px para baixo */ 		
+	right: 350px; 								posiciona a 90px para a esquerda
+	top: 400px; 								posiciona a 70px para baixo	
 	width: 95px;
     height: 40px;
-   	border-width: 2px;/* tamanho de borda*/
-	border-style: outset;/* estilo de borda*/ 
-	border-color: #000000;/* cor de borda*/
+   	border-width: 2px;							tamanho de borda
+	border-style: outset;						estilo de borda
+	border-color: #000000;						cor de borda
 }
+.carinho9{
+	position: absolute; 
+	right: 250px; 								posiciona a 90px para a esquerda 
+	top: 500px; 								posiciona a 70px para baixo
+	width: 200px;
+    height: 70px;
+	border-width: 9px;							tamanho de borda
+	border-style: outset;						estilo de borda
+	border-color: #000000;						cor de borda
+}*/

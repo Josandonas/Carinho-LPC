@@ -11,7 +11,7 @@ body {
 	margin-top: 0cm;
 }
 .imgitem2{
-    width: 640px;
+    width: 630px;
     height: 523px;
     display: flex;
     margin:0px;	
@@ -24,33 +24,35 @@ body {
 }
 .preco2{
 	position: absolute; 
-	right: 70px; /* posiciona a 90px para a esquerda */ 
+	right: 200px; /* posiciona a 90px para a esquerda */ 
 	top: 400px; /* posiciona a 70px para baixo */ 	
 	font-weight: 900;
 	font-family:sans-serif;
 }
+/*
 .carinho2{
 	position: absolute; 
-	right: 199px; /* posiciona a 90px para a esquerda */ 
-	top: 500px; /* posiciona a 70px para baixo */ 	
+	right: 199px; 							 posiciona a 90px para a esquerda  
+	top: 500px; 							 posiciona a 70px para baixo  	
 	width: 200px;
     height: 70px;
-	border-width: 9px;/* tamanho de borda*/
-	border-style: outset;/* estilo de borda*/
-	border-color: #000000;/* cor de borda*/
-}
+	border-width: 9px;						tamanho de borda
+	border-style: outset;					estilo de borda
+	border-color: #000000;					cor de borda
+}*/
 .detalhes2{
 	position: absolute; 
 	right: 60px; /* posiciona a 90px para a esquerda */ 
 	top: 260px; /* posiciona a 70px para baixo */ 		
 }
+/*
 .numero2{
 	position: absolute; 
-	right: 270px; /* posiciona a 90px para a esquerda */ 
-	top: 400px; /* posiciona a 70px para baixo */ 		
+	right: 270px; 							posiciona a 90px para a esquerda
+	top: 400px; 							posiciona a 70px para baixo 
 	width: 130px;
     height: 40px;
-   	border-width: 3px;/* tamanho de borda*/
-	border-style: outset;/* estilo de borda*/ 
-	border-color: #000000;/* cor de borda*/
-}
+   	border-width: 3px;						tamanho de borda
+	border-style: outset;					estilo de borda 
+	border-color: #000000;					cor de borda
+}*/
